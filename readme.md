@@ -3,11 +3,7 @@
 By Faisal Rana
 
 ## Description of program
-This is a form that takes a number as an input and outputs a list of numbers based on the following rules:
-
-Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+This is a website for a pizza company. A user is able to input the size and toppings they would like for their pizza and the website will return their bill.  
 
 ## Technologies used
 - HTML
@@ -15,30 +11,23 @@ Numbers that contain a 3: all digits are replaced (all digits) with "Won't you b
 - Bootstrap
 - Javascript
 - jQuery
-- Looping
+- Construcor function
+- Prototype method
 
 ## Tests
 
-Describe: RoboTran()
-Test: It should return an array containing all numbers less then input number. 
-Expect(RoboTran(4).toEqual([“1”, “2”, “3”, “4”])
+Describe: pizzaMaker()
+Test1: It should take size and toppings and output a pizza object. 
+Expect(pizzaMaker(size, toppings)equalTo.(pizza object with size and topping and default price)
+Describe: toppingCalc()
+Test2: It should return the number of (toppings x pricePerTopping) per topping and add it to the pizza price. 
+Expect(sizeCalc([pepperoni, artichoke])equalTo.(2 x pricePerTopping + pizza.price)
+Test3: If the pizza is large, it should add the additional price to the default pizza price.
+Expect(sizeCalc(large)equalTo.(pizza.price + 5.00)
+Test5: pizzaMaker()
+Describe: Inputting toppings and size will output a pizza object with a calculated price.
+Expect(pizzaMaker(size, toppings))equalTo.(pizza object with price)
 
-Test: If the elements of the array contain a 3, it will replace it with “Won’t you be my neighbor” Expect(RoboTran(4).toEqual([“1”, “2”, “Won’t you be my neighbor”, “4”])
-
-Test: If the elements of the array contain a 2, it will replace it with “Boop”
- Expect(RoboTran(4).toEqual([“1”, “boop”, “Won’t you be my neighbor”, “4”])
-
-Test: If the elements of the array contain a 1, it will replace it with “beep"
- Expect(RoboTran(4).toEqual([“beep”, “boop”, “Won’t you be my neighbor”, “4”])
-
-Test: If the elements of the array contain a 13, it will replace it with “Won’t you be my neighbor” Expect(RoboTran([13]).toEqual(“Won’t you be my neighbor”)
-
-Test: If the elements of the array contain a 13, it will replace it with “Won’t you be my neighbor” Expect(RoboTran([21]).toEqual("Boop")
-
-Test: If the elements of the array contain a 32, it will replace it with “Won’t you be my neighbor” Expect(RoboTran([32]).toEqual(“Won’t you be my neighbor”)
-
-Test: It should convert the array of numbers to a string with spaces
- Expect(RoboTran(5).toEqual("beep boop Won't you be my neighbor? 4 5")
 
 
 ## Program setup instructions
@@ -50,7 +39,7 @@ To setup:
 - Open index.html in your browser. 
 
 ## Github pages website
-https://faisalrana.github.io/Project3/
+https://faisalrana.github.io/Project4/
 
 ## Copyright and license info
 

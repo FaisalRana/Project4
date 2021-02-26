@@ -10,32 +10,44 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-    <h1>Welcome to Laysif's Pizza</h1>
-    <p>Please fill the form below to place an order.</p>
-    <h2>To order a pizza, simply fill the form out below!</h2>
-    <form id="formOne">
+    <h1>Welcome to the veggie lovers pizza maker</h1>
+    <p>To order a pizza, simply fill the form out below.</p>
+    <form id="pizzaOrder">
       <div class="form-group">
-        <label for="question1">What size pizza would you like?</label>
-        <select class="form-control" id="question1">
+        <label class="title" for="question1">What size pizza would you like?</label>
+        <br> <select class="form-one" id="question1" required>
           <option value="1">Small</option>
           <option value="2">Medium</option>
           <option value="2">Large</option>
-        </select>
-        <label for="question2">What meat toppings would you like?</label><br>
-        <input type="checkbox" id="pepperoni" name="Pepperoni" value="Pepperoni">
-        <label for="pepperoni"> Halal Pepperoni</label><br>
-        <input type="checkbox" id="chicken" name="chicken" value="Chicken">
-        <label for="chicken"> Chicken Tikka</label><br>
-        <input type="checkbox" id="bacon" name="bacon" value="Bacon">
-        <label for="bacon"> Halal Bacon </label><br>
-        <input type="checkbox" id="pepperoni" name="Pepperoni" value="Pepperoni">
-        <label for="pepperoni"> Halal Pepperoni</label><br>
-        <input type="checkbox" id="chicken" name="chicken" value="Chicken">
-        <label for="chicken"> Chicken Tikka</label><br>
-        <input type="checkbox" id="bacon" name="bacon" value="Bacon">
-        <label for="bacon"> Halal Bacon </label><br>
-        
-
+        </select><br>
+      <div class="form-group">
+        <p class= "title">What meat toppings would you like?</p>
+        <input type="checkbox" name="meat-topping" value="chicken"> Chicken with filler and fake grill marks.<br>
+        <input type="checkbox" name="meat-topping" value="anchovies"> Salt with anchovies <br>
+        <input type="checkbox" name="meat-topping" value="shrimp"> Worlds smallest shrimp<br>
+        <input type="checkbox" name="meat-topping" value="beef"> Dry chunks of beef <br>
+        <input type="checkbox" name="meat-topping" value="bacon"> Grease with some bacon on the side <br>
+      </div>
+      <div class="form-group">
+        <p class= "title">What veggie toppings would you like?</p>
+        <input type="checkbox" name="veggie-topping" value="broccli"> Broccli<br>
+        <input type="checkbox" name="veggie-topping" value="onion">Onion<br>
+        <input type="checkbox" name="veggie-topping" value="olive">Olives<br>
+        <input type="checkbox" name="veggie-topping" value="greenpepper">Greenpeppers <br>
+        <input type="checkbox" name="veggie-topping" value="spinach">Spinach <br>
+        <input type="checkbox" name="veggie-topping" value="artichoke">Artichocke <br>
+        <input type="checkbox" name="veggie-topping" value="jalapeno">Jalapeno <br>
+        <input type="checkbox" name="veggie-topping" value="fried onion">Fried Onion <br>
+        <input type="checkbox" name="veggie-topping" value="banana peppers">Banana Peppers <br>
+      </div>
+      <button type="submit">Place Order</button>
+      <button type="reset">Reset</button>
+    
+      <div id="hiddenOutput">
+        <span id="FinalPizza">
+          <p><b>Your pizza:</b></p>
+        </span>
+      </div>
     </div>
   </div>
   

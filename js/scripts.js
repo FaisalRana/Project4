@@ -1,18 +1,24 @@
-// //business logic 
+//business logic 
+let meatT = [];
+let veggieT = [];
+let cheese = "cheese";
+let price = 0;
+let size = "";
 
-// function Pizza(pSize, cheese, meatT, veggieT) {
-//   this.pSize = pizzaSize;
-//   this.cheese = cheese;
-//   this.meatT = [];
-//   this.veggieT = [];
-// }
+function Pizza(size, meatT, veggieT) {
+  this.size = size;
+  this.cheese = cheese;
+  this.meatT = meatT;
+  this.veggieT = veggieT;
+  this.price = 0;
+}
 
-// let pizzaSize = "";
+let pizza1 = new Pizza(size, meatT, veggieT);
 
-// $("input:checkbox[name=meat-topping]:checked").each(function() {
-//   const meat = $(this).val();
-//   meatT.push(meat);
-// });
+Pizza.prototype.addTops = function() {
+   let inputSize = $("#question1 option:selected").val()
+   this.size = size + inputSize;
+}
 
 //user logic
 
@@ -20,16 +26,16 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    let arr = [];
-    $("#sizeO").append($("#question1 option:selected").val());
     $("input:checkbox[name=meatT]:checked").each(function() {
       const meats = $(this).val();
-      $("#toppingsO").append(meats + "<br>");
+      meatT.push(meats);
     });
     $("input:checkbox[name=veggieT]:checked").each(function() {
       const veggies = $(this).val();
-      $("#toppingsO").append(veggies + "<br>");
+      veggieT.push(veggies);
     });
+    let pizza1 = new Pizza(size, meatT, veggieT);
+    pizza1.addTops();
     $("#hiddenOutput").show();
   });
 });

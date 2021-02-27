@@ -41,3 +41,10 @@ button {
 .title {
   text-decoration: underline;
 }
+
+#veggie {
+  color:yellow;
+}
+#pizza {
+  color:red;
+}

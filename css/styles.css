@@ -37,6 +37,7 @@ div {
 button {
   background-color:lightsteelblue;
   color:black;
+  text-align:center;
 } 
 .title {
   text-decoration: underline;

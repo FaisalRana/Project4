@@ -5,7 +5,7 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Layif's Pizza Shop</title>
+  <title>Laysif's Pizza Shop</title>
 </head>
 <body>
   <div class="container">
@@ -15,15 +15,16 @@
     </div>
     <form id="formOne">
       <div class="form-group" id="question1">
-        <p class=:"title">Please select your pizza size:</p><br>
+        <p class="title">Please select your pizza size:</p><br>
         <select id="question1">
           <option>Large</option>
           <option>Medium</option>
           <option>Small</option>
         </select>
       </div>
+      <img id="vegTree" src="img/download.jpeg" alt="Vegetable Tree">
       <div class="form-group" id="question2">
-        <p class= "title">What meat toppings would you like?</p>
+        <p class= "title">What meat toppings would you like? ($2.00/ea)</p>
         <input type="checkbox" name="meatT" value="Chicken"> Chicken with filler and fake grill marks.<br>
         <input type="checkbox" name="meatT" value="Anchovies"> Salt with anchovies <br>
         <input type="checkbox" name="meatT" value="Shrimp"> Worlds smallest shrimp<br>
@@ -31,7 +32,7 @@
         <input type="checkbox" name="meatT" value="Bacon"> Grease with some bacon on the side <br>
       </div>
       <div class="form-group" id="question3">
-        <p class= "title">What veggie toppings would you like?</p>
+        <p class= "title">What veggie toppings would you like? ($1.00/ea)</p>
         <input type="checkbox" name="veggieT" value="Broccli"> Broccli<br>
         <input type="checkbox" name="veggieT" value="Onion">Onion<br>
         <input type="checkbox" name="veggieT" value="Olive">Olives<br>
@@ -44,15 +45,17 @@
       </div>
  
       </div>
-      <div id=button>
+      <div>
       <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="reset">Reset</button>
       </div>
     </form>
-    
+    <button class="btn btn-secondary" onClick="window.location.reload();">Refresh Page</button>
+ 
+
     
       <div id="hiddenOutput">
-        <p>You have placed an order for 1 <span id="sizeO"> </span> pizza with: <br> Cheese <br> <span id="toppingsO"> </span> </p> 
+        <p>You have placed an order for 1 <span id="sizeP"> </span> pizza with: <br><span id="toppingsP"> </span> </p> 
+        <p>Your final pizza price is: $<span id="priceP"></span></p>
       </div>
     
   </div>

@@ -34,13 +34,14 @@ div {
   padding:20px;
 }
 
-button {
+#button {
   background-color:lightsteelblue;
   color:black;
-  text-align:center;
 } 
 .title {
   text-decoration: underline;
+  font-weight:bold;
+  color:orange;
 }
 
 #veggie {
@@ -48,4 +49,9 @@ button {
 }
 #pizza {
   color:red;
+}
+#vegTree {
+  float:right;
+  display:block;
+  width:300px;
 }

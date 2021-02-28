@@ -1,4 +1,4 @@
-# Project 2: Language Quiz
+# Project 2: Veggie Lovers Pizza Shop
 
 By Faisal Rana
 

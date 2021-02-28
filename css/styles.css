@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #000000, #2b2b2b, #082611, #023f14);
+	background: linear-gradient(-45deg, #ec5050, #98219c, #13c722);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
   color:lightyellow;
@@ -7,6 +7,7 @@ body {
 
 #hiddenOutput {
   display:none ;
+  border:1pt dotted orange;
 }
 
 h1 {
@@ -31,16 +32,12 @@ body {
   margin:30px;
 }
 div {
-  padding:20px;
+  padding:10px;
 }
 
-button {
-  background-color:lightsteelblue;
-  color:black;
-  text-align:center;
-} 
 .title {
-  text-decoration: underline;
+  text-decoration: underline; 
+  color:orange;
 }
 
 #veggie {
@@ -48,4 +45,32 @@ button {
 }
 #pizza {
   color:red;
+}
+#veggiePizza {
+  float:right;
+  margin:0px 0px 15px 15px;
+  display:none;
+  width: 30%;
+}
+#blankPizza {
+  float:right;
+  margin:0px 0px 15px 15px;
+  display:inline;
+  width: 30%;
+}
+
+#priceP {
+  color:lawngreen;
+}
+
+button {
+    
+}
+
+#sizeP {
+  color: yellow;
+}
+
+#toppingsP {
+  color:yellow;
 }

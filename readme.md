@@ -17,16 +17,16 @@ This is a website for a pizza company. A user is able to input the size and topp
 ## Tests
 
 Describe: pizzaMaker()
-Test1: It should take size and toppings and output a pizza object. 
-Expect(pizzaMaker(size, toppings)equalTo.(pizza object with size and topping and default price)
-Describe: toppingCalc()
-Test2: It should return the number of (toppings x pricePerTopping) per topping and add it to the pizza price. 
-Expect(sizeCalc([pepperoni, artichoke])equalTo.(2 x pricePerTopping + pizza.price)
+Test1: It should take size and toppings and output a pizza object.
+Expect(Pizza(size, toppings)equalTo.(pizza object with size and topping and default price)
+Describe: append()
+Test2: It should append the HTML with size toppings and price. 
+Expect(append()equalTo.(.hide(image().show(newimage))
 Test3: If the pizza is large, it should add the additional price to the default pizza price.
-Expect(sizeCalc(large)equalTo.(pizza.price + 5.00)
-Test5: pizzaMaker()
+Expect(addSize(large)equalTo.(pizza.price + 14.00)
+Test5: modifyPrice()
 Describe: Inputting toppings and size will output a pizza object with a calculated price.
-Expect(pizzaMaker(size, toppings))equalTo.(pizza object with price)
+Expect(modifyPrice(size, toppings))equalTo.(pizza object with price)
 
 
 

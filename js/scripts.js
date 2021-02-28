@@ -15,6 +15,31 @@ function Pizza(size, meatT, veggieT) {
   this.price = 0;
 }
 
+let append = function() {
+  $("#sizeP").append($("#question1 option:selected").val());
+  $("#toppingsP").append(meatT.join("<br>"));
+  $("#toppingsP").append("<br>");
+  $("#toppingsP").append(veggieT.join("<br>"));
+  $("#priceP").append(pizza1.price)
+}
+
+let showHide = function() {
+    $("#hiddenOutput").show();
+    $("#blankPizza").hide();
+    $("#veggiePizza").show();
+}
+
+let addInput = function() {
+  $("input:checkbox[name=meatT]:checked").each(function() {
+    const meats = $(this).val();
+    meatT.push(meats);
+  });
+  $("input:checkbox[name=veggieT]:checked").each(function() {
+    const veggies = $(this).val();
+    veggieT.push(veggies);
+  });
+}
+
 let pizza1 = new Pizza(size, meatT, veggieT);
 
 Pizza.prototype.addSize = function() {
@@ -42,22 +67,11 @@ Pizza.prototype.modifyPrice = function() {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    $("input:checkbox[name=meatT]:checked").each(function() {
-      const meats = $(this).val();
-      meatT.push(meats);
-    });
-    $("input:checkbox[name=veggieT]:checked").each(function() {
-      const veggies = $(this).val();
-      veggieT.push(veggies);
-    });
-    $("#hiddenOutput").show();
+    addInput();
+    showHide();
     pizza1.addSize();
     pizza1.modifyPrice();
-    $("#sizeP").append($("#question1 option:selected").val());
-    $("#toppingsP").append(meatT.join("<br>"));
-    $("#toppingsP").append("<br>");
-    $("#toppingsP").append(veggieT.join("<br>"));
-    $("#priceP").append(pizza1.price)
+    append();
   });
 });
 

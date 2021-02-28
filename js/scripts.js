@@ -17,6 +17,7 @@ function Pizza(size, meatT, veggieT) {
 
 let append = function() {
   $("#sizeP").append($("#question1 option:selected").val());
+  $("#toppingsP").append("Cheese<br>");
   $("#toppingsP").append(meatT.join("<br>"));
   $("#toppingsP").append("<br>");
   $("#toppingsP").append(veggieT.join("<br>"));
@@ -74,3 +75,4 @@ $(document).ready(function() {
     append();
   });
 });
+

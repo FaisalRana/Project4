@@ -17,18 +17,17 @@ function Pizza(size, meatT, veggieT) {
 
 let append = function() {
   $("#sizeP").append($("#question1 option:selected").val());
-  $("#toppingsP").append("Cheese<br>");
   $("#toppingsP").append(meatT.join("<br>"));
   $("#toppingsP").append("<br>");
   $("#toppingsP").append(veggieT.join("<br>"));
-  $("#priceP").append(pizza1.price)
+  $("#priceP").append(pizza1.price);
 }
 
 let showHide = function() {
     $("#hiddenOutput").show();
     $("#blankPizza").hide();
     $("#veggiePizza").show();
-}
+};
 
 let addInput = function() {
   $("input:checkbox[name=meatT]:checked").each(function() {
@@ -39,7 +38,7 @@ let addInput = function() {
     const veggies = $(this).val();
     veggieT.push(veggies);
   });
-}
+};
 
 let pizza1 = new Pizza(size, meatT, veggieT);
 
@@ -52,14 +51,14 @@ Pizza.prototype.addSize = function() {
      this.price = this.price + 10;
    } else {
      this.price = this.price + 5;
-   }
-}
+   };
+};
 
 Pizza.prototype.modifyPrice = function() {
   numMeats = numMeats + meatT.length;
   numVeggies = numVeggies + veggieT.length;
-  this.price = this.price + (numMeats * 2) + (numVeggies * 1)
-}
+  this.price = this.price + (numMeats * 2) + (numVeggies * 1);
+};
 
 
 //user logic

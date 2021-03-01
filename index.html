@@ -11,36 +11,40 @@
   <div class="container">
     <div class="jumbotron">
       <h1>Welcome to the <span id="veggie">veggie</span> lovers <span id="pizza">pizza</span>  shop!</h1>
-      <img id="blankPizza" src="img/blankpizza.png" alt="Vegetable Tree"></p>
-      <img id="veggiePizza" src="img/download.png" alt="Vegetable Tree"></p>
+      <img id="blankPizza" src="img/blankpizza.png" alt="Vegetable Tree">
+      <img id="veggiePizza" src="img/download.png" alt="Vegetable Tree">
     <form id="formOne">
-      <div class="form-group" id="question1">
+      <div class="form-group">
         <p class="title">Please select your pizza size:</p>
-        <select id="question1">
-          <option>Large</option>
-          <option>Medium</option>
-          <option>Small</option>
+        <select id="question1" required>
+          <option value="Large">Large ($14)</option>
+          <option value="Medium">Medium ($10)</option>
+          <option value="Small">Small ($5)</option>
         </select>
       </div>
       <div class="form-group" id="question2">
         <p class= "title">What meat toppings would you like? ($2.00/ea)</p>
-        <input type="checkbox" name="meatT" value="Fake Chicken"> Chicken with filler and fake grill marks.<br>
-        <input type="checkbox" name="meatT" value="Salty Anchovies"> Salt with anchovies <br>
-        <input type="checkbox" name="meatT" value="Small Shrimp"> Worlds smallest shrimp<br>
-        <input type="checkbox" name="meatT" value="Dry Beef"> Dry chunks of beef <br>
-        <input type="checkbox" name="meatT" value="Greasy Bacon"> Grease with some bacon on the side <br>
+        <input type="checkbox" name="meatT" value="Fake Chicken"> 20% Real Chicken<br>
+        <input type="checkbox" name="meatT" value="Salty Anchovies"> Salt with Anchovies <br>
+        <input type="checkbox" name="meatT" value="Small Shrimp"> Worlds smallest Shrimp<br>
+        <input type="checkbox" name="meatT" value="Dry Beef"> Dry chunks of Beef <br>
+        <input type="checkbox" name="meatT" value="Greasy Bacon"> Grease with some Bacon on the side <br>
+        <input type="checkbox" name="meatT" value="Terrible Turkey"> Leftover Turkey<br>
+        <input type="checkbox" name="meatT" value="Tuna with Murcury"> Tuna with Mercury<br>
+        
       </div>
       <div class="form-group" id="question3">
         <p class= "title">What veggie toppings would you like? ($1.00/ea)</p>
-        <input type="checkbox" name="veggieT" value="Magnificent Mushrooms">Magnificent Mushrooms<br>
-        <input type="checkbox" name="veggieT" value="OG Onions"> OG Onions<br>
-        <input type="checkbox" name="veggieT" value="Outstanding Olives">Olives<br>
-        <input type="checkbox" name="veggieT" value="Great Greenpepper">Greenpeppers<br>
-        <input type="checkbox" name="veggieT" value="Super Spinach">Super Spinach<br>
-        <input type="checkbox" name="veggieT" value="Amazing Artichoke">Amazing Artichocke<br>
-        <input type="checkbox" name="veggieT" value="Joyful Jalapeno">Joyful Jalapenos<br>
-        <input type="checkbox" name="veggieT" value="Extraordinary Egglplant">Extraordinary Eggplant<br>
-        <input type="checkbox" name="veggieT" value="Bomb Banana peppers">Bomb Banana Peppers<br>
+        <input type="checkbox" name="veggieT" value=" Magnificent Mushrooms"> Magnificent Mushrooms<br>
+        <input type="checkbox" name="veggieT" value=" OG Onions"> OG Onions<br>
+        <input type="checkbox" name="veggieT" value=" Out-of-this-world Olives"> Out-of-this-world Olives<br>
+        <input type="checkbox" name="veggieT" value=" Great Greenpepper"> Great Green Peppers<br>
+        <input type="checkbox" name="veggieT" value=" Super Spinach"> Super Spinach<br>
+        <input type="checkbox" name="veggieT" value=" Amazing Artichoke"> Amazing Artichocke<br>
+        <input type="checkbox" name="veggieT" value=" Joyful Jalapeno"> Joyful Jalapenos<br>
+        <input type="checkbox" name="veggieT" value=" Extraordinary Egglplant"> Extraordinary Eggplant<br>
+        <input type="checkbox" name="veggieT" value=" Bomb Banana peppers"> Bomb Banana Peppers<br>
+        
       </div>
       <div id="buttons">
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -16,11 +16,11 @@ This is a website for a pizza company. A user is able to input the size and topp
 
 ## Tests
 
-Describe: Pizza(size)
+Describe: Pizza()
 
 Test1: It should take size and toppings and output a pizza with empty objects and 0 price.
 
-Expect(new Pizza("Large",[],[])
+Expect(new Pizza()
 equalTo.(
 size.Large
 meatT.[]
@@ -29,18 +29,19 @@ price.0
 )
 
 
-Describe: Pizza.addSize()
+ Describe: Pizza.addSize()
 
- Test2: It should take a given size and add a numerical "default" value to the pizza price.
+ Test2: It should detect the input size using if statement and apply the correct price. 
 
- Expect(pizza1.addSize(Large))equalTo.(this.price + 14 ))
+ Expect(pizza1.addSize(Large))equalTo.(this.price + 14))
 
- Test3: If the pizza is large, it should add the additional price of $7.00 to the default pizza price.
+ Describe: showHide()
+ 
+ Test3: It should hide the blank pizza and show the filled pizza
+ 
+ Expect(showHide()equalTo.(hide image and show image)
 
- Expect(pizza1.addSize(Medium)equalTo.(pizza.price + 7.00)
-
-
-Describe: modifyPrice()
+ Describe: modifyPrice()
 
  Test4: Inputting toppings and size will output a pizza object with a calculated price.
 

@@ -28,7 +28,7 @@ veggieT.[]
 price.0
 )
 
-Describe: Pizza.addSize()
+- Describe: Pizza.addSize()
 
 Test2: It should take a given size and add a numerical "default" value to the pizza price.
 
@@ -38,7 +38,7 @@ Test3: If the pizza is large, it should add the additional price of $7.00 to the
 
 Expect(pizza1.addSize(Medium)equalTo.(pizza.price + 7.00)
 
-Describe: modifyPrice()
+- Describe: modifyPrice()
 
 Test4: Inputting toppings and size will output a pizza object with a calculated price.
 

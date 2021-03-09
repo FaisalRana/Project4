@@ -16,7 +16,7 @@ This is a website for a pizza company. A user is able to input the size and topp
 
 ## Tests
 
-- Describe: Pizza(size)
+Describe: Pizza(size)
 
 Test1: It should take size and toppings and output a pizza with empty objects and 0 price.
 
@@ -28,7 +28,8 @@ veggieT.[]
 price.0
 )
 
-- Describe: Pizza.addSize()
+
+Describe: Pizza.addSize()
 
  Test2: It should take a given size and add a numerical "default" value to the pizza price.
 
@@ -38,7 +39,8 @@ price.0
 
  Expect(pizza1.addSize(Medium)equalTo.(pizza.price + 7.00)
 
-- Describe: modifyPrice()
+
+Describe: modifyPrice()
 
  Test4: Inputting toppings and size will output a pizza object with a calculated price.
 

@@ -17,7 +17,9 @@ This is a website for a pizza company. A user is able to input the size and topp
 ## Tests
 
 Describe: Pizza(size)
+
 Test1: It should take size and toppings and output a pizza with empty objects and 0 price.
+
 Expect(new Pizza("Large",[],[])
 equalTo.(
 size.Large

@@ -43,7 +43,7 @@ price.0
 
  Describe: modifyPrice()
 
- Test4: Inputting toppings and size will output a pizza object with a calculated price.
+ Test4: Inputting meat and veggie topping will output a modified price based on the number and type of toppings. 
 
  Expect(pizza1.modifyPrice())equalTo.(this.price + (numMeats * 2) + (numVeggies * 1)
 

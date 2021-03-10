@@ -1,6 +1,6 @@
 //business logic 
 
-function Pizza(size) {
+function Pizza() {
   this.size = "";
   this.cheese = "cheese";
   this.meatT = [];
@@ -22,8 +22,7 @@ let showHide = function() {
     $("#veggiePizza").show();
 };
 
-Pizza.prototype.addSize = function() {
-   let inputSize = $("#question1 option:selected").val()
+Pizza.prototype.addSize = function(inputSize) {
    this.size = this.size + inputSize;
    if (inputSize === "Large") {
      this.price = this.price + 14;
@@ -58,7 +57,8 @@ $(document).ready(function() {
     event.preventDefault();
     addInput();
     showHide();
-    pizza1.addSize();
+    let inputSize = $("#question1 option:selected").val()
+    pizza1.addSize(inputSize);
     pizza1.modifyPrice();
     pizza1.append();
   });

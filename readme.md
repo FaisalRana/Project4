@@ -1,4 +1,4 @@
-# Project 2: Veggie Lovers Pizza Shop
+# Project 4: Veggie Lovers Pizza Shop
 
 By Faisal Rana
 
